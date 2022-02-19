@@ -91,7 +91,7 @@
         </div>
     </div>
 
-    
+
     <div class="container bg-dark p-4 mb-6">
         <?php
         $cnt = 3;
@@ -110,8 +110,7 @@
                             <p class="card-text" style="font-size:18px;"> <?= "Qualification  :  " . $doc['qualification'] ?> </p>
                             <p class="card-text" style="font-size:18px;"> <?= "Expertise  :  " . $doc['expertise'] ?> </p>
                             <p class="card-text" style="font-size:18px;"> <?= "Organization  :  " . $doc['organization'] ?> </p>
-                            <a href="http://localhost/DoctorLagbe/public/AllUserInfoController/doctorDetailsInfo? 
-                                    &docid= <?php echo $doc["docid"] ?>" class="btn sign-btn">Details</a>
+                            <a href="<?= (base_url('AllUserInfoController/doctorDetailsInfo') . '? &docid=' . $doc['docid']) ?>" class="btn sign-btn">Details</a>
                         </div>
                     </div>
                 </div>
